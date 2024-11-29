@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: 'Testing Github Actions'
-        run: |pwd
+        run: pwd
 
       - name: 'Testing Printing'
         run: echo Mohamed
