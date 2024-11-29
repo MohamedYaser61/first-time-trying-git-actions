@@ -14,8 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github Actions'
-        run: pwd
+      - name: 'Printing folder contents before checkout'
+        run: ls
 
-      - name: 'Testing Printing'
-        run: echo Mohamed
+      - uses: actions/checkout@v3
+
+      - name: 'Printing folder contents after checkout'
+        run: ls
